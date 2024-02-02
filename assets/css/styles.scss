@@ -1,0 +1,139 @@
+---
+---
+@import "variables";
+
+// $bg: #ffffff
+// $fg: #000000
+// $red: #cc241d
+// $green: #98971a
+// $yellow: #d79921
+// $blue: #458588
+// $purple: #b16286
+// $aqua: #689d6a
+// $orange: #d65d0e
+// $gray: #aaaaaa
+// $cursor: #000000
+// $altgray: #333
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: $bg;
+    color: $fg;
+    font-color: $fg;
+    font-family: Inter, sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    height: 97vh;
+    width: 55vh;
+    align-content: center;
+    // border: 1px solid;
+}
+
+.header-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 2vh;
+    // border: 1px solid;
+    margin-bottom: -8px;
+
+    h1 {
+
+        hr {
+            margin-top: 8px;
+            margin-bottom: -8px;
+            height: 3px;
+            background-color: $fg;
+            border-color: $fg;
+            width: 54.9vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: $gray;
+            transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            color: $fg;
+        }
+
+    }
+}
+
+.index-container {
+    display: flex;
+    // border: 1px solid;
+    font-size: 2.7vh;
+    font-family: "Inter", sans-serif;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        font-family: "Source Sans 3", sans-serif;
+
+        li {
+
+            a {
+                text-decoration: none;
+                color: $gray;
+                transition: color 0.2s ease-in-out;
+            }
+
+            a:hover {
+                color: $fg;
+            }
+        }
+    }
+
+    p {
+        font-size: 1.5vh;
+        font-weight: 50;
+        color: $altgray;
+    }
+
+}
+
+.index {
+    display: grid;
+    justify-content: left;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid;
+    font-size: 9px;
+    color: $gray;
+}
+
+#cursor {
+    font-color: $cursor;
+    animation: opacity 1.5s ease-in-out infinite;
+    opacity: 1;
+}
+
+@keyframes opacity {
+    0% {
+    opacity: 1;
+    }
+ 
+    50% {
+    opacity: 0;
+    }
+    
+    100% {
+    opacity: 1;
+    }
+    
+}
