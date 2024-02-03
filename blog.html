@@ -1,0 +1,49 @@
+---
+layout: menu
+title: forbade's blog
+---
+
+<main>
+
+  <div class="flex-container" id="blog-container">
+
+    <div class="header-container" id="blog-header">
+
+      <h1>
+
+        <a href="/">../</a>blog.html
+
+        <ul>
+
+          <li id="current">all</li>
+          <li> <a href="tech.html">tech</a> </li>
+          <li> <a href="math.html">math</a> </li>
+          <li> <a href="humms.html"> humms </a> </li>
+
+        </ul>
+
+        <hr>
+
+      </h1>
+
+    </div>
+
+    <div class="posts-container">
+
+        <ul class="posts">
+
+          {% for post in site.posts %}
+            <li>
+              <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>{{ post.excerpt }}<hr>
+            </li>
+          {% endfor %}
+
+        </ul>
+
+    </div>
+
+  </div>
+
+</main>
+
+<footer>*Enter profound quote* Powered by Jekyll.</footer>
