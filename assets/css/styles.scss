@@ -138,8 +138,10 @@ body {
 }
 
 .posts-container {
-    // padding-bottom: 300vh;
     // border: 1px solid black;
+    max-height: 90vh;
+    overflow-y: auto;
+    margin-bottom: 5vh;
 
     .posts {
         font-family: "Source Sans 3", sans-serif;
@@ -162,20 +164,34 @@ body {
                 text-decoration-color: $fg
             }
 
+            .post-date {
+                margin-left: 1vh;
+                font-size: 12px;
+            }
+
         }
 
         hr {
             margin-top: 4vh;
+            width: 90%;
         }
     }
 }
 
+.blog-main {
+    display: flex;
+    flex-direction: column;
+    margin-top: -12vh;
+}
+
 #blog-container {
-    margin-bottom: 100%;
+    flex: 0 0 auto;
 }
 
 #blog-header {
-    margin-top: 100%;
+    // position: absolute;
+    margin-top: 50%;
+    // border: 1px solid black;
 }
 
 footer {

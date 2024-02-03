@@ -3,7 +3,7 @@ layout: menu
 title: forbade's blog
 ---
 
-<main>
+<main class="blog-main">
 
   <div class="flex-container" id="blog-container">
 
@@ -34,7 +34,7 @@ title: forbade's blog
 
           {% for post in site.posts %}
             <li>
-              <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>{{ post.excerpt }}<hr>
+              <h2><a href="{{ post.url }}">{{ post.title }}</a><span class="post-date">{{ post.date | date_to_string }}</span></h2>{{ post.excerpt }}<hr>
             </li>
           {% endfor %}
 
