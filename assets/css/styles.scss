@@ -218,8 +218,16 @@ footer {
         width: 40vh;
     }
 
+    #blog-container {
+        margin-bottom: 0%;
+    }
+
     .posts-container {
         width: 40vh;
-        height: 1px;
+    }
+
+    #blog-header {
+        border: 1px solid black;
+        margin-top: 10%;
     }
 }
