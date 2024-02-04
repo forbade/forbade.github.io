@@ -5,15 +5,27 @@
   <head>
     <title>{{ page.title }}</title>
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
   </head>
 
-  <body>
-    {{ content }}
+  <body id="post-body">
+    <main id="post-main">
+      <div class="flex-container" id="post-container">
+        <div class="header-container" id="post-header">
+          <h1> <a href="/blog.html">../</a>"{{ page.title }}".html<hr></h1>
+        </div>
+        <div class="post-content">
+         {{ content }}
+         <hr>
+         <br>
+         <footer id="post-footer" >A forbade production. Powered by Jekyll.</footer>
+        </div>
+      </div>
+    </main>
   </body>
 
 </html>

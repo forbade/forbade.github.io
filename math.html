@@ -11,13 +11,13 @@ title: forbade's blog
 
       <h1>
 
-        <a href="/">../</a>blog.html
+        <a href="/">../</a>math.html
 
         <ul>
 
-          <li id="current">all</li>
+          <li> <a href="blog.html">all</a> </li>
           <li> <a href="tech.html">tech</a> </li>
-          <li> <a href="math.html">math</a> </li>
+          <li id="current">math</li>
           <li> <a href="humms.html"> humms </a> </li>
 
         </ul>
@@ -32,7 +32,7 @@ title: forbade's blog
 
         <ul class="posts">
 
-          {% for post in site.posts %}
+          {% for post in site.categories.math %}
             <li>
               <h2><a href="{{ post.url }}">{{ post.title }}</a><span class="post-date">{{ post.date | date_to_string }}</span></h2>{{ post.excerpt }}<hr>
             </li>
@@ -46,4 +46,4 @@ title: forbade's blog
 
 </main>
 
-<footer>Forbade's curation. Powered by Jekyll.</footer>
+<footer>*Enter profound quote* Powered by Jekyll.</footer>
